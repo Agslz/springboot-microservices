@@ -36,8 +36,8 @@ services:
     image: postgres:15.2
     restart: unless-stopped
     environment:
-      POSTGRES_DB: ags
-      POSTGRES_USER: root123
+      POSTGRES_DB: ms_products
+      POSTGRES_USER: ags
       POSTGRES_PASSWORD: root123
     ports:
       - 5432:5432
