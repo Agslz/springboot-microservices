@@ -18,13 +18,13 @@ public class InventoryController {
 
     @GetMapping("/{sku}")
     @ResponseStatus(HttpStatus.OK)
-    public Boolean isInStock(@PathVariable String sku){
+    public boolean isInStock(@PathVariable("sku") String sku) {
         return inventoryService.isInStock(sku);
     }
 
-    @PostMapping
+    @PostMapping("/in-stock")
     @ResponseStatus(HttpStatus.OK)
-    public BaseResponse areInStock(@RequestBody List<OrderItemRequest> orderItems){
+    public BaseResponse areInStock(@RequestBody List<OrderItemRequest> orderItems) {
         return inventoryService.areInStock(orderItems);
     }
 
