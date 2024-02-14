@@ -30,16 +30,16 @@ public class ProductService {
 
         productRepository.save(product);
 
-        log.info("Producto added: {}", product);
+        log.info("Product added: {}", product);
     }
 
-    public List<ProductResponse> getAllProducts(){
+    public List<ProductResponse> getAllProducts() {
         var products = productRepository.findAll();
 
-        return products.stream().map(this::mapToProductResponse).collect(toList());
+        return products.stream().map(this::mapToProductResponse).toList();
     }
 
-    private ProductResponse mapToProductResponse(Product product){
+    private ProductResponse mapToProductResponse(Product product) {
         return ProductResponse.builder()
                 .id(product.getId())
                 .sku(product.getSku())
@@ -48,8 +48,5 @@ public class ProductService {
                 .price(product.getPrice())
                 .status(product.getStatus())
                 .build();
-
     }
-
-
 }
