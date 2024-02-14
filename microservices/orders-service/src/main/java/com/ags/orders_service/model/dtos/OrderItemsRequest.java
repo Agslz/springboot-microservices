@@ -2,13 +2,12 @@ package com.ags.orders_service.model.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderItemRequest {
+public class OrderItemsRequest {
 
     private Long id;
     private String sku;
