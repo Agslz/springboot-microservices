@@ -51,6 +51,11 @@ El proyecto busca implementar las siguientes funcionalidades:
 
 ![imagen](https://github.com/Agslz/springboot-microservices/assets/83142033/b237c094-aa37-44ad-8fd3-c6706a4336a3)
 
+### -----------------------------------------------------------------------------------------------------------------------------
+
+![imagen](https://github.com/Agslz/springboot-microservices/assets/83142033/818b789d-c2c1-4e16-afc8-fbe4d3cafa79)
+
+
 
 
 
